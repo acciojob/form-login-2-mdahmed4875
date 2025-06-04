@@ -5,6 +5,6 @@ form.addEventListener("submit",function (e){
 let lname=document.getElementById("lname").value;
 let phone=document.getElementById("phone").value;
 let email=document.getElementById("email").value;
-	let mess = `First Name: ${fname}\nLast Name: ${lname}\nPhone Number: ${phone}\nEmail ID: ${email}`;
+	let mess = `First Name: ${fname} Last Name: ${lname} Phone Number: ${phone} Email ID: ${email}`;
 	alert(mess);
 });
