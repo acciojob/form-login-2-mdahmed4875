@@ -1,10 +1,10 @@
-let fname=document.getElementbyId(fname).value;
-let lname=document.getElementbyId(lname).value;
-let phone=document.getElementbyId(phone).value;
-let email=document.getElementbyId(email).value;
-let btn=document.getElementbyId(btn);
-btn.addEventListener("submit",function (e){
+let form=document.getElementById("form");
+form.addEventListener("submit",function (e){
 	e.preventDefault();
-	let mess=fname+" "+lname+" "+phone+" "+email;
+	let fname=document.getElementById("fname").value;
+let lname=document.getElementById("lname").value;
+let phone=document.getElementById("phone").value;
+let email=document.getElementById("email").value;
+	let mess = `First Name: ${fname}\nLast Name: ${lname}\nPhone Number: ${phone}\nEmail ID: ${email}`;
 	alert(mess);
 });
